@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 
 export const ShoppingIcon = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"} {...props}>
@@ -33,4 +34,33 @@ export const CancelIcon = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"} {...props}>
         <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
+);
+
+export const FacebookIcon = (props) => (
+    <Image
+        src="/src/assets/Social/Facebook.png"
+        alt="Facebook Icon"
+        width={24}
+        height={24}
+        {...props}
+    />
+);
+export const XIcon = (props) => (
+    <Image
+        src="/assets/Social/Twitter.png"
+        alt="X Icon"
+        width={24}
+        height={24}
+        {...props}
+    />
+);
+
+export const LinkedinIcon = (props) => (
+    <Image
+        src="/assets/Social/Linkedin.png"
+        alt="Linkedin Icon"
+        width={24}
+        height={24}
+        {...props}
+    />
 );
